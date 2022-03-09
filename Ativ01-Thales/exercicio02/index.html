@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 </title>
+    
+</head>
+<body>
+    <p>Data de data nascimento:<span id="anoNascimento">1998</span></p>
+    <p>Ano atual:<span id="anoAtual">2022</span></p>
+    <div>
+    <p>Idade atual: <span id="idadeAtual"></span></p>
+    <p>Idade futura: <span id="idadeFutura"></span></p>
+    </div>
+
+    <script>
+        let anoAtual = parseInt(document.querySelector('#anoAtual').textContent)
+        let anoNascimento = parseInt(document.querySelector('#anoNascimento').textContent)
+        let idadeAtualEl = document.querySelector('#idadeAtual')
+        let idadeFuturaEl = document.querySelector('#idadeFutura')
+        
+        let idadeAtual = anoAtual - anoNascimento
+        let idadeFutura = 2050 - anoNascimento
+
+        idadeAtualEl.innerText = idadeAtual
+        idadeFuturaEl.innerText = idadeFutura
+        
+    </script>
+
+    
+</body>
+</html>
