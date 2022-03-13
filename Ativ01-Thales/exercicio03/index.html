@@ -7,7 +7,7 @@
     <title>Exercicio 3</title>
 </head>
 <body>
-    <p>Carteira pessoal R$: <span id ="carteira">1000</span></p>
+    <p>Carteira pessoal R$: <span id ="carteira">1000.00</span></p>
     <p>Valor do dolar USD (R$): <span id ="dolar">5.07</span></p>
     <p>Valor da carteira pessoal USD: <span id="carteiraDolar" ></span></p>
     <script>
@@ -17,7 +17,7 @@
 
         let converter = carteira / dolar
 
-        carteiraDolarEl.innerText = converter
+        carteiraDolarEl.innerText = converter.toFixed(2)
 
 
     </script>
