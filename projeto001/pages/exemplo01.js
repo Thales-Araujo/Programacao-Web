@@ -1,3 +1,3 @@
 export default function init(){
-    return "Olá mundo!!"
+    return <h1>Olá mundo!!</h1>
 }
