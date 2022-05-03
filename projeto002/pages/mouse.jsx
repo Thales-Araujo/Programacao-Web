@@ -8,12 +8,15 @@ export default function init(){
 
     function move(e){
         console.log(e.clientX, e.clientY)
+        setX(e.clientX)
+        setY(e.clientY)
     }
 
-    function movimento(e){
-        console.log(e)
-    }
+
     return (
-        <div style={{height:"100vh"}} onMouseMove={movimento}></div>
+        <div style={estilo} onMouseMove={move}>
+        <span>Coordenada x: {x}</span>
+        <span>Coordenada y: {y}</span>
+        </div>
     )
 }
