@@ -2,7 +2,7 @@ function megasena(qtd=6, numeros=[]) {
     if (qtd < 6 || qtd > 15){
         throw 'Quantidade Invalida'
     }
-    if (numeros.lengh() === qtd){
+    if (numeros.length === qtd){
         return numeros.sort((a,b)=> a - b)
     }      
     const aleatorio = parseInt(Math.random()*60) + 1
@@ -12,3 +12,5 @@ function megasena(qtd=6, numeros=[]) {
     return megasena(qtd,numeros)
     
 }
+
+console.log(megasena())
